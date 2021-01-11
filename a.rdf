@@ -1,0 +1,21 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                         xmlns:classicmodels="http://www.classicmodels.tms/classicmodels#"
+                         xmlns:customers="http://www.classicmodels.tms/classicmodels/customers#"
+                         xmlns:orders="http://www.classicmodels.tms/classicmodels/orders#"
+                >
+<rdf:Description rdf:about="http://www.classicmodels.tms/classicmodels/customers/103">
+<customers:customerNumber>103</customers:customerNumber>
+<customers:customerName>Ateliergraphique</customers:customerName>
+<customers:contactLastName>Schmitt</customers:contactLastName>
+<customers:contactFirstName>Carine</customers:contactFirstName>
+<customers:phone>40.32.2555</customers:phone>
+<customers:addressLine1>54,rueRoyale</customers:addressLine1>
+<customers:addressLine2>NULL</customers:addressLine2>
+<customers:city>Nantes</customers:city>
+<customers:state>NULL</customers:state>
+<customers:postalCode>44000</customers:postalCode>
+<customers:country>France</customers:country>
+<customers:salesRepEmployeeNumber>1370</customers:salesRepEmployeeNumber>
+<customers:creditLimit>21000</customers:creditLimit>
+</rdf:Description>
+</rdf:RDF>

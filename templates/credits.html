@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Main page</title>
+ <style>
+        @import url('https://fonts.googleapis.com/css?family=Fjalla+Onedisplay=swap');
+        @import url('https://fonts.googleapis.com/css?family=Bellezadisplay=swap');
+        @font-face {
+        font-family: 'Poiret One';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Poiret One'), local('PoiretOne-Regular'), url(https://fonts.gstatic.com/s/poiretone/v7/UqyVK80NJXN4zfRgbdfbo55cVw.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwN4rWqZPAA.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Oswald Light'), local('Oswald-Light'), url(https://fonts.gstatic.com/s/oswald/v16/TK3hWkUHHAIjg75-sh0Tus9C.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        * {
+        font-family: 'Raleway';
+        }
+        strong{
+            font-family: 'Belleza', sans-serif;
+            color: rgb(0, 0, 0);
+        }
+      hr {
+        border-top: 2px solid rgb(0, 0, 102);
+        }
+        p {
+            font-family: 'Times New Roman', Times, serif;
+         margin-left:25px;
+         margin-right:25px;
+         padding-top: 50px;
+         padding-bottom: 50px;
+         padding-left: 45px;
+         padding-right: 45px;
+         color:#6E6F66;
+         font-size: 16px;
+         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            }
+        p:hover{
+            background-color: #DEDEDE;
+            cursor: pointer;
+        }
+             /* Style the tab */
+        .tab {
+        float: left;
+        background-color: #0e0d0de3;
+        width: 26%;
+        height: 1000%;
+        }
+        .tab button:hover {
+        background-color: #ddd;
+        color: #0e0d0de3;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+        background-color: #ccc;
+        color: #0e0d0de3;
+        }
+
+        .tabcontent {
+        float: left;
+        padding: 25px 3% 25px 5%;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        }
+        /* Style the buttons inside the tab */
+        .tab button {
+        font-family: 'Oswald';
+        display: block;
+        background-color: #0e0d0de3;
+        color: #dddcdc;
+        padding: 18px 16px;
+        width: 100%;
+        border: none;
+        border-right: 1px solid #ccc;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+        }
+
+         #p01 {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            }
+        .collapsible {
+            background-color:#1C1C1C;
+            columns: #f5eeee;;
+            display: inline-block;
+            border: rgb(134, 240, 240)!important;
+            border-style: solid !important;
+            border-width: 2px 0px 2px  !important;
+            font-size: 16px !important;
+
+        }
+        .Head{
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        h1 {
+            position: relative;
+            margin: 0;
+            font-family:'Poiret One';
+            background-color: #373737;
+            border-bottom: 10px solid #373737;
+            border-top: 10px solid #373737;
+            color:rgb(255, 255, 255);
+            text-align:center;
+            font-size: 50px;
+            padding: 0;
+            }
+        .left {
+          left: 0;
+        }
+        .map{
+            height: 92%;
+            top: 8%;
+            bottom: 0;
+        }
+
+        .right {
+            right: 0;
+            border-left: 3px solid #767A7A;
+            border-right: 3px solid #767A7A;
+            background-color: rgb(255, 255, 255);
+        }
+        .callout {
+        position: absolute;
+        bottom: 35px;
+        right: 20px;
+        margin-left: 20px;
+        max-width: 300px;
+        }
+
+        .callout-header {
+        font-family:'Poiret One';
+        padding: 25px 15px;
+        background: #555;
+        font-size: 30px;
+        color: white;
+        }
+
+        .callout-container {
+        padding: 15px;
+        background-color: #ccc;
+        color: black
+        }
+
+        .closebtn {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        }
+        .closebtn:hover {
+        color: lightgrey;
+        }
+        img {
+        width: 100%;
+        padding: 5%,5%;
+            }
+         </style>
+</head>
+
+<body>
+    <div>
+        <h1>Project</h1>
+
+      <div class="tab">
+            <button class="Search" onclick="RDB()">RDB </button>
+            <button class="Search" onclick="RDF()">RDF </button>
+            <button class="Search" onclick="Queries()">Queries </button>
+            <button class="Search" onclick="RDBTORDF()">RDB TO RDF </button>
+            <button class="Search" onclick="Credits()">Credits</button>
+        </div>
+        <div class="tabcontent">
+            <p>Guide: Prof Senthilselvan N <br>Student: Kothai P 120003157<br>Student :Aniruthan V 119003017</p>
+
+
+        <div>
+
+        </div>
+        </div>
+    </div>
+    <script>
+          function RDB(){
+            location.href = "/RDB";
+        }
+        function RDF(){
+            location.href = "/RDF";
+        }
+        function RDBTORDF(){
+            location.href = "/RDBTORDF";
+        }
+       function SQL(){
+            var QUERY = document.getElementById("QUERY").value;
+            location.href = "/SQL/"+QUERY;
+        }
+        function SPARQL(){
+            var QUERY = document.getElementById("QUERY").value;
+            location.href = "/SPARQL/"+QUERY;
+        }
+
+        function Credits(){
+            location.href = "/credits";
+        }
+    </script>
+</body>
+
+</html>
